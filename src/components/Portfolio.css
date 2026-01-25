@@ -30,7 +30,7 @@
 
 .hero-subtitle {
   font-size: 1.2rem;
-  color: var(--accent-color);
+  color: #888888;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 400;
@@ -51,13 +51,13 @@
 
 .grid-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(216, 27, 96, 0.12);
 }
 
 .image-placeholder {
   width: 100%;
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+  background: linear-gradient(135deg, #fce4ec 0%, #ffffff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +74,7 @@
 
 .grid-item p {
   padding: 0 2rem 2rem;
-  color: var(--accent-color);
+  color: #666666;
   line-height: 1.6;
 }
 
