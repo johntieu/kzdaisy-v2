@@ -1,0 +1,19 @@
+.app {
+  min-height: 100vh;
+}
+
+.main-container {
+  padding-top: 80px;
+  min-height: calc(100vh - 80px);
+}
+
+.section-wrapper {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.section-wrapper.transitioning {
+  opacity: 0;
+  transform: translateY(20px);
+}
