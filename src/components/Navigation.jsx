@@ -26,6 +26,16 @@ function Navigation({ activeSection, onSectionChange }) {
           >
             Pilates
           </a>
+          <a
+            href="#contact"
+            className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault()
+              onSectionChange('contact')
+            }}
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>
