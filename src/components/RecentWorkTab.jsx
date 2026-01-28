@@ -7,11 +7,12 @@ function RecentWorkTab() {
         <h3>Actor</h3>
         <div className="video-wrapper">
           <iframe
-            src="https://www.youtube.com/embed/wKKxllDWRQ4"
+            src="https://www.youtube-nocookie.com/embed/wKKxllDWRQ4?rel=0&modestbranding=1"
             title="Actor Video"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
       </div>
@@ -19,11 +20,12 @@ function RecentWorkTab() {
         <h3>Writer</h3>
         <div className="video-wrapper">
           <iframe
-            src="https://www.youtube.com/embed/89h3EfuBoJo"
+            src="https://www.youtube-nocookie.com/embed/89h3EfuBoJo?rel=0&modestbranding=1"
             title="Writer Video"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
       </div>
@@ -31,11 +33,12 @@ function RecentWorkTab() {
         <h3>Improviser</h3>
         <div className="video-wrapper">
           <iframe
-            src="https://www.youtube.com/embed/Cxt4ijdPFNc"
+            src="https://www.youtube-nocookie.com/embed/Cxt4ijdPFNc?rel=0&modestbranding=1"
             title="Improviser Video"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
       </div>
