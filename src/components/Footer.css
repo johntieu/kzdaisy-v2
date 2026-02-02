@@ -22,6 +22,78 @@
   text-transform: uppercase;
 }
 
+.back-to-top {
+  display: inline-block;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.footer-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-nav-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.footer-nav-link:hover {
+  color: var(--primary-color);
+}
+
+.footer-separator {
+  color: var(--accent-color);
+  font-size: 1rem;
+}
+
+.footer-coaching-link {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.footer-coaching-link a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-coaching-link a:hover {
+  border-bottom-color: var(--accent-color);
+}
+
+.footer-heading-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-heading-link:hover {
+  color: var(--accent-color);
+}
+
 .footer-link {
   display: block;
   color: #666666;
@@ -29,6 +101,12 @@
   margin-bottom: 0.5rem;
   transition: color 0.3s ease;
   font-size: 0.95rem;
+}
+
+.footer-text .footer-link {
+  display: inline;
+  color: var(--accent-color);
+  margin-bottom: 0;
 }
 
 .footer-link:hover {

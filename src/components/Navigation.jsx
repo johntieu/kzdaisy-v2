@@ -4,18 +4,17 @@ function Navigation({ activeSection, onSectionChange }) {
   return (
     <nav className="nav">
       <div className="nav-container">
-        <div className="nav-logo">PORTFOLIO</div>
+        <a
+          href="#pilates"
+          className="nav-logo"
+          onClick={(e) => {
+            e.preventDefault()
+            onSectionChange('pilates')
+          }}
+        >
+          KZ DAISY
+        </a>
         <div className="nav-links">
-          <a
-            href="#acting"
-            className={`nav-link ${activeSection === 'acting' ? 'active' : ''}`}
-            onClick={(e) => {
-              e.preventDefault()
-              onSectionChange('acting')
-            }}
-          >
-            Acting
-          </a>
           <a
             href="#pilates"
             className={`nav-link ${activeSection === 'pilates' ? 'active' : ''}`}
@@ -25,6 +24,16 @@ function Navigation({ activeSection, onSectionChange }) {
             }}
           >
             Pilates
+          </a>
+          <a
+            href="#performer"
+            className={`nav-link ${activeSection === 'performer' ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault()
+              onSectionChange('performer')
+            }}
+          >
+            Performer
           </a>
           <a
             href="#contact"

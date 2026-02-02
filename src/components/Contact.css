@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 4rem;
-  align-items: start;
+  align-items: center;
 }
 
 .contact-form-container {
@@ -125,6 +125,13 @@
   color: var(--primary-color);
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.contact-item li {
+  text-align: left;
+  font-size: 0.95rem;
+  color: #666666;
+  margin-left: 1.25rem;
 }
 
 .contact-link {

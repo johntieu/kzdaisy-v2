@@ -18,8 +18,8 @@ function ActingPortfolio() {
     <section className={`portfolio-section ${isVisible ? 'visible' : ''}`}>
       <div className="section-content">
         <div className="hero">
-          <h1 className="hero-title">Acting Portfolio</h1>
-          <p className="hero-subtitle">Performance • Film • Theater</p>
+          <h1 className="hero-title">Performer Portfolio</h1>
+          <p className="hero-subtitle">Acting • Comedy • Puppetry • Voiceover • Coaching</p>
         </div>
 
         <div className="portfolio-tabs">
