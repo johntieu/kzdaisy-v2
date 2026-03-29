@@ -1,13 +1,15 @@
 import PortfolioSection from './PortfolioSection'
 import './Portfolio.css'
-import prenatalPhoto from '/pilates-photos/prenatal.jpeg'
+import prenatalPhoto from '/pilates-photos/Prenatal.jpeg'
+import reformerPhoto from '/pilates-photos/Reformer.webp'
+import matPhoto from '/pilates-photos/Yoga.jpeg'
 
 function PilatesPortfolio() {
   const items = [
     {
       title: 'Mat Pilates & Yogalates',
       description: 'Certified Mat Pilates & Yoga Instructor',
-      
+      image:matPhoto,
       placeholder: ''
     },
     {
@@ -19,7 +21,7 @@ function PilatesPortfolio() {
     {
       title: 'Reformer Pilates (Coming Soon)',
       description: 'Certification In Progress',
-      
+      image: reformerPhoto,
       placeholder: ''
     }
   ]
