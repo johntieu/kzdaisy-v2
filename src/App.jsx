@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  const [activeSection, setActiveSection] = useState('acting')
+  const [activeSection, setActiveSection] = useState('performer')
   const [isTransitioning, setIsTransitioning] = useState(false)
 
   const handleSectionChange = (section) => {
@@ -23,10 +23,19 @@ function App() {
   }
 
   useEffect(() => {
-    const hash = window.location.hash.slice(1)
-    if (hash && (hash === 'acting' || hash === 'pilates' || hash === 'contact')) {
-      setActiveSection(hash)
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1)
+      if (hash && (hash === 'performer' || hash === 'pilates' || hash === 'contact')) {
+        handleSectionChange(hash)
+      }
     }
+
+    // Check initial hash
+    handleHashChange()
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
   }, [])
 
   return (
@@ -38,7 +47,7 @@ function App() {
 
       <main className="main-container">
         <div className={`section-wrapper ${isTransitioning ? 'transitioning' : ''}`}>
-          {activeSection === 'acting' && <ActingPortfolio />}
+          {activeSection === 'performer' && <ActingPortfolio />}
           {activeSection === 'pilates' && <PilatesPortfolio />}
           {activeSection === 'contact' && <Contact />}
         </div>

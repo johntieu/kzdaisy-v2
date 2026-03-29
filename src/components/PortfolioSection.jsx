@@ -21,14 +21,23 @@ function PortfolioSection({ title, subtitle, items }) {
         <div className="content-grid">
           {items.map((item, index) => (
             <div key={index} className="grid-item">
-              <div className="image-placeholder">
-                <span>{item.placeholder}</span>
-              </div>
+              {item.image ? (
+                <img src={item.image} alt={item.title} className="grid-item-image" />
+              ) : (
+                <div className="image-placeholder">
+                  <span>{item.placeholder}</span>
+                </div>
+              )}
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </div>
           ))}
         </div>
+        <h3 className="coaching-link">Reach out <a href="#contact" onClick={(e) => {
+          e.preventDefault()
+          window.location.hash = 'contact'
+          window.dispatchEvent(new HashChangeEvent('hashchange'))
+        }}>here</a> with class inquiries, scheduling requests, or just to say hi! </h3>
       </div>
     </section>
   )

@@ -113,37 +113,49 @@ function Contact() {
 
           <div className="contact-info">
             <div className="contact-item">
-              <h3>Email</h3>
-              <a href="mailto:contact@example.com" className="contact-link">
-                contact@example.com
-              </a>
+              <h3>Pilates Offerings</h3>
+              <li>Mat Pilates classes</li>
+              <li>Yogalates classes</li>
+              <li>Prenatal fitness classes</li>
+              <li>Private, semi-private, group, & corporate sessions</li>
+              <li>In-person & virtual options</li>
+              <li>Customized & tailored programs</li>
+              <li>All levels welcome</li>
             </div>
 
             <div className="contact-item">
-              <h3>Phone</h3>
-              <a href="tel:+1234567890" className="contact-link">
-                +1 (234) 567-890
-              </a>
+              <h3>Performer Offerings</h3>
+              <li>Live performance for shows & events</li>
+              <li>Bookings & readings for acting, theater, on-camera, comedy, puppetry, & voiceover projects</li>
+              <li>In-person & virtual options</li>
+            </div>
+
+            <div className="contact-item">
+              <h3>Coaching</h3>
+              <li>Acting, improv, & performance coaching</li>
+              <li>Audition prep, rehearsals, & practice groups</li>
+              <li>Private, semi-private, group, & corporate sessions</li>
+              <li>In-person & virtual options</li>
+              <li>Team building & collaboration experiences</li>
+              <li>All levels welcome</li>
             </div>
 
             <div className="contact-item">
               <h3>Social Media</h3>
               <div className="social-links">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                <div>
+                <a href="https://instagram.com/thekzdaisy" target="_blank" rel="noopener noreferrer" className="social-link">
                   Instagram
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
-                  LinkedIn
+                <span> (under construction)</span>
+                </div>
+                <a href="https://kzdaisy.substack.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                  Newsletter
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
-                  Twitter
+                <a href="https://youtube.com/@kz_daisy" target="_blank" rel="noopener noreferrer" className="social-link">
+                  Youtube
                 </a>
               </div>
-            </div>
-
-            <div className="contact-item">
-              <h3>Location</h3>
-              <p className="contact-text">Los Angeles, CA</p>
             </div>
           </div>
         </div>

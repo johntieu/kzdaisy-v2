@@ -66,6 +66,12 @@
   font-weight: 500;
 }
 
+.grid-item-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
 .grid-item h3 {
   padding: 1.5rem 2rem 0.5rem;
   font-size: 1.5rem;
@@ -191,7 +197,7 @@
 .recent-work {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 3rem;
+  gap: 2rem;
   padding: 2rem 0;
 }
 
@@ -329,6 +335,32 @@
 .audio-equipment li strong {
   color: var(--accent-color);
   font-weight: 500;
+}
+
+.coaching-link {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #666666;
+  padding: 2rem;
+  margin-top: 3rem;
+  background: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+.coaching-link a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.coaching-link a:hover {
+  border-bottom-color: var(--accent-color);
 }
 
 .testimonials-section {

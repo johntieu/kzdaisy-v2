@@ -1,31 +1,38 @@
 import PortfolioSection from './PortfolioSection'
 import './Portfolio.css'
+import prenatalPhoto from '/pilates-photos/Prenatal.jpeg'
+import reformerPhoto from '/pilates-photos/Reformer.webp'
+import matPhoto from '/pilates-photos/Yoga.jpeg'
 
 function PilatesPortfolio() {
   const items = [
     {
-      title: 'About',
-      description: 'Your pilates background and certifications.',
-      placeholder: 'Instructor Photo'
+      title: 'Mat Pilates & Yogalates',
+      description: 'Certified Mat Pilates & Yoga Instructor',
+      image:matPhoto,
+      placeholder: ''
     },
     {
-      title: 'Classes',
-      description: 'Information about your classes and approach.',
+      title: 'Prenatal Fitness & Wellness',
+      description: 'Certified Prenatal Fitness Instructor',
+      image: prenatalPhoto,
       placeholder: 'Class Image'
     },
     {
-      title: 'Studio',
-      description: 'Details about your teaching environment.',
-      placeholder: 'Studio'
+      title: 'Reformer Pilates (Coming Soon)',
+      description: 'Certification In Progress',
+      image: reformerPhoto,
+      placeholder: ''
     }
   ]
 
   return (
     <PortfolioSection
-      title="Pilates Portfolio"
-      subtitle="Movement • Wellness • Instruction"
+      title="Pilates Classes"
+      subtitle="Mat Pilates • Yogalates • Prenatal Fitness • Private & Group Sessions"
       items={items}
     />
+    
   )
 }
 
