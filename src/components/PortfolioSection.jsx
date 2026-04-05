@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Portfolio.css'
 
 function PortfolioSection({ title, subtitle, items }) {
   const [isVisible, setIsVisible] = useState(false)
+  const navigate = useNavigate()
 
   useEffect(() => {
     setIsVisible(false)
@@ -33,10 +35,9 @@ function PortfolioSection({ title, subtitle, items }) {
             </div>
           ))}
         </div>
-        <h3 className="coaching-link">Reach out <a href="#contact" onClick={(e) => {
+        <h3 className="coaching-link">Reach out <a href="/contact" onClick={(e) => {
           e.preventDefault()
-          window.location.hash = 'contact'
-          window.dispatchEvent(new HashChangeEvent('hashchange'))
+          navigate('/contact')
         }}>here</a> with class inquiries, scheduling requests, or just to say hi! </h3>
       </div>
     </section>
