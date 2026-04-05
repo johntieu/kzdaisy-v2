@@ -29,7 +29,7 @@ function PilatesPortfolio() {
   return (
     <PortfolioSection
       title="Pilates Classes"
-      subtitle="Mat Pilates • Yogalates • Prenatal Fitness • Private & Group Sessions"
+      subtitle="Mat Pilates • Yoga • Prenatal Fitness • Private & Group Sessions"
       items={items}
     />
     
