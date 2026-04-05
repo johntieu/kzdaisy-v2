@@ -31,4 +31,8 @@ jobs:
           app_location: "/"        # your Vite app is at repo root
           api_location: ""         # no API
           output_location: "dist"  # <-- Vite build output folder
+        env:
+          VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
+          VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
 
