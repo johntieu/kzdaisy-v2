@@ -7,7 +7,7 @@ import matPhoto from '/pilates-photos/Yoga.jpeg'
 function PilatesPortfolio() {
   const items = [
     {
-      title: 'Mat Pilates & Yogalates',
+      title: 'Mat Pilates & Yoga',
       description: 'Certified Mat Pilates & Yoga Instructor',
       image:matPhoto,
       placeholder: ''

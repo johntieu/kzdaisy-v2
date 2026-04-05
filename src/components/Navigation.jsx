@@ -1,50 +1,32 @@
+import { NavLink } from 'react-router-dom'
 import './Navigation.css'
 
-function Navigation({ activeSection, onSectionChange }) {
+function Navigation() {
   return (
     <nav className="nav">
       <div className="nav-container">
-        <a
-          href="#pilates"
-          className="nav-logo"
-          onClick={(e) => {
-            e.preventDefault()
-            onSectionChange('pilates')
-          }}
-        >
+        <NavLink to="/pilates" className="nav-logo">
           KZ DAISY
-        </a>
+        </NavLink>
         <div className="nav-links">
-          <a
-            href="#pilates"
-            className={`nav-link ${activeSection === 'pilates' ? 'active' : ''}`}
-            onClick={(e) => {
-              e.preventDefault()
-              onSectionChange('pilates')
-            }}
+          <NavLink
+            to="/pilates"
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
           >
             Pilates
-          </a>
-          <a
-            href="#performer"
-            className={`nav-link ${activeSection === 'performer' ? 'active' : ''}`}
-            onClick={(e) => {
-              e.preventDefault()
-              onSectionChange('performer')
-            }}
+          </NavLink>
+          <NavLink
+            to="/performer"
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
           >
             Performer
-          </a>
-          <a
-            href="#contact"
-            className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
-            onClick={(e) => {
-              e.preventDefault()
-              onSectionChange('contact')
-            }}
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
           >
             Contact
-          </a>
+          </NavLink>
         </div>
       </div>
     </nav>
