@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom'
 import audioDemo from '/KZDaisy-CommercialDemo.mp3'
 
 function RecentWorkTab() {
+  const navigate = useNavigate()
   return (
     <div className="recent-work">
       <div className="video-item">
@@ -100,10 +102,9 @@ function RecentWorkTab() {
           </div>
         </div>
       </div>
-      <h3 className="coaching-link">Reach out <a href="#contact" onClick={(e) => {
+      <h3 className="coaching-link">Reach out <a href="/contact" onClick={(e) => {
         e.preventDefault()
-        window.location.hash = 'contact'
-        window.dispatchEvent(new HashChangeEvent('hashchange'))
+        navigate('/contact')
       }}>here</a> with coaching requests, booking inquiries, or just to say hi! </h3>
     </div>
   )

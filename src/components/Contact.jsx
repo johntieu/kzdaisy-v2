@@ -115,7 +115,7 @@ function Contact() {
             <div className="contact-item">
               <h3>Pilates Offerings</h3>
               <li>Mat Pilates classes</li>
-              <li>Yogalates classes</li>
+              <li>Yoga classes</li>
               <li>Prenatal fitness classes</li>
               <li>Private, semi-private, group, & corporate sessions</li>
               <li>In-person & virtual options</li>
